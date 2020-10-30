@@ -4,7 +4,7 @@ body {
     color: #f5f6f7;
   }
   p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  
   .bg-1 { 
     background-color: #31afb4; /* Green */
     color: #ffffff;
@@ -18,13 +18,22 @@ body {
     color: #555555;
   }
 
-  .bg-4 { 
+  .bg-4{
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+
+  .bg-5 { 
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .formacao{
+    display: flex;
   }
 
   .img-responsive{
