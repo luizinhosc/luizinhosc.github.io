@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -28,14 +29,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#carreira">Carreira</a></li>
-                        <li><a href="#">Formação</a></li>
-                        <li><a href="#">Interesses</a></li>
+                        <li><a href="#formacao-academica">Formação</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
         <img src="eu.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="280"
@@ -102,7 +102,7 @@
                 <p>Tecnologias como Delphi, SQL Server e rotinas de processamento em batch foram os desafios que
                     precisei encarar para atender
                     um gama de clientes com alto grau de exigencia.
-                </p><br><br>
+                </p>
                 <img src="zarp.jpg" class="img-responsive margin" style="width:45%" alt="Image">
             </div>
             <div class="col-sm-4">
@@ -127,26 +127,167 @@
         </div>
     </div>
 
-    <!-- Fourthy Container -->
-    <div class="container-fluid bg-4 text-center" id="formacao">
+    <div class="container-fluid bg-4 text-center" id="formacao-academica">
         <h3 class="margin"><b>Formação</b></h3>
         <div class="formacao">
-            <img src="ufscar.png" class="img-responsive margin" style="width:20%" alt="Image">
-            <p>No ano de 2019 conclui minha Pós graduação em Desenvolvimento de Software para Web, realizado na
-                Universidade
-                Federal de São Carlos.</p>
+            <div class="formacao-img">
+                <img src="ufscar.png" class="img-responsive margin" style="width:100%" alt="Imagem">
+            </div>
+            <div class="formacao-texto">
+                <p> No final de 2017 senti a necessidade de voltar a academia para aprofundar estudos nas novas
+                    tecnologias
+                    utizadas no mercado de desenvolvimento de software.
+                </p>
+                <p> Optei pela pós graduação em Desenvolvimento de Software para Web, realizado na
+                    Universidade Federal de São Carlos.</p>
+                <p> Na pós graduação tive contato com as tecnologias mais atuais de desenvolvimento e colaboração em
+                    equipes, me reciclando e aumentando a confiança como profissional hoje estou muito conciente dos
+                    rumos
+                    que a TI tem tomado e muito mais preparado.
+                </p>
+                <p> Tecnologias que tive contato durante minha jorna na Pós graduação.</p>
+            </div>
         </div>
-        <p>No ano de 2019 conclui minha Pós graduação em Desenvolvimento de Software para Web, realizado na
-            Universidade
-            Federal de São Carlos.</p>
+        <h4> <b>
+                << Tecnologias que tive contato durante minha jorna na Pós graduação.>>
+            </b> </h4>
+        <div class="formacao-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Conteudo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desenvolvimento de Software em Java </td>
+                        <td>
+                            <p>Qualidade de código: Demeter, GRASP e SOLID. </p>
+                            <p>Padrões de Projeto em Java – Aplicação dos principais padrões de projeto criacionais,
+                                estruturais e comportamentais em Java para a obtenção de código flexível e reutilizável.
+                            </p>
+                            <p>Frameworks de persitência de dados com JPA e hibernate.
+                            </p>
+                            <p>Arquitetura de aplicações WEB como, protocolo HTTP, requisição e resposta, JSP, JSTL,
+                                HTML, CSS e Java script.
+                            </p>
+                            <p>Web services e arquitetura RESTful em Java - Utilização do Spring Boot para exposição de
+                                regras de negócio como serviços web RESTful. Implementação de mecanismos de segurança
+                                para serviços web RESTful. Visão geral sobre testes e documentação de serviços serviços
+                                web.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teste Funcional e Estrutural em Aplicações Web e Aplicações Móveis</td>
+                        <td>
+                            <p>Conceitos e terminologia sobre Teste Funcional e Teste Estrutural.</p>
+                            <p>Automatização de critérios de teste funcionais.</p>
+                            <p>Automatização de critérios de teste estruturais baseados em fluxo de controle.</p>
+                            <p>Integração de arcabouços de teste unitário com ferramentas de apoio ao teste funcional.
+                            </p>
+                            <p>Integração de ferramentas de captura e reprodução com ferramentas de apoio ao teste
+                                funcional e estrutural</p>
+                        </td>
 
+                    </tr>
+                    <tr>
+                        <td>User eXperience [para todos] na Web</td>
+                        <td>
+                            <p>Princípios, conceitos e vertentes de User eXperience (UX) para todos na web.</p>
+                            <p>Técnicas de design e avaliação de usabilidade na web: Personas, guidelines, rapid
+                                prototyping – baixa fidelidade, Avaliação Heurística e Testes com Usuário.</p>
+                            <p>Técnicas de design e avaliação de acessibilidade na web: guidelines, rapid prototyping –
+                                média fidelidade, Avaliação Simplificada de Acessibilidade, Avaliações semi automáticas
+                            </p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Desenvolvimento de Software do front ao back-end com JavaScript
+                        </td>
+                        <td>
+                            <p>HTML5/CSS: O HTML e CSS é a base para qualquer página web. Neste tópico entraremos no
+                                mundo das tags, APIs e conceitualização do CSS. Conteúdo preparatório para os outros
+                                temas deste tópico.</p>
+                            <p>JavaScript: explorar a criação script com JavaScript, novidades do ECMASCript, conceito
+                                de variáveis, escopo, operadores, estrutura de controle, funções, clousure, patterns
+                                para JavaScript, promise, conceitos de programação funcional e melhores práticas.</p>
+                            <p>React: estrutura de um projeto react, componentes, estados, roteamento, redux e criação
+                                de testes.</p>
+                            <p>Angular: diferenças entre as versões do angular, estrutura de um projeto Angular,
+                                typescript, angular CLI, componentes, rotas, data binding, serviços, formulários e
+                                integração com Back-End.</p>
+                            <p>Introdução ao Node.js: Apresentação do JavaScript como alternativa de linguagem para
+                                desenvolvimento de APIs de dados. Análise da arquitetura baseada em eventos do Node.js,
+                                com foco nos benefícios de performance e concorrência trazidos por ela.</p>
+                            <p>Desenvolvendo APIs de dados com Express: Aprofundamento no framework Express para o
+                                desenvolvimento de APIs de dados, buscando cobrir casos excepcionais como recebimento de
+                                arquivos (upload) e envio de imagens pré-processadas, além do CRUD básico.</p>
+                            <p>Trabalhando com dados usando Knex: Adicionar persistência de dados na nossa aplicação
+                                através do framework de construção de SQL Knex. Gerenciar a evolução da base de dados
+                                através da ferramenta db-migrate.</p>
+                            <p>Servidores Stateless vs. Stateful: Análise conceitual de servidores stateless e
+                                servidores stateful, incluindo o conceito de sticky session. Desenvolvimento de
+                                mecanismo de autenticação totalmente stateless.</p>
+                            <p>Usando cache para aumentar a performance da API: Apresentação do uso de cache em diversas
+                                camadas da aplicação e análise dos ganhos de performance obtidos.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Academia Agil
+                        </td>
+                        <td>
+                            <p>Objetivos da Academia ágil, gerenciamento de projetos versus gerenciamento de produtos,
+                                iniciativas ágeis versus iniciativas tradicionais, manifesto ágil (e Modern Agile) e o
+                                framework cynefin</p>
+                            <p> O Framework Scrum: visão geral, o scrum team, eventos, artefatos e transparência (essa
+                                parte do curso é preparatória para a certificação PSM I da scrum.org).</p>
+                            <p>Gestão de Produtos: criando um produto na prática.</p>
+                            <p>O Framework SAFe 4.5: Full SAFe, Large Solution SAFe, Portfolio SAFe, Essential SAFe e a
+                                ferramenta CA Agile Central.</p>
+                            <p>Se tornando um facilitador, a carreira de agilista e prova teórica.</p>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="container-fluid bg-5 text-center">
-        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    <footer class="container-fluid bg-5 text-right">
+        <ul class="social-network social-circle">
+            <li>Facebok <a href="https://www.facebook.com/luiz.a.costajunior" class="icoFacebook" title="Facebook"><i
+                        class="fa fa-facebook"></i></a></li>
+            <li>Linkedin <a href="https://www.linkedin.com/in/luiz-anselmo-costa-7233a297/" class="icoLinkedin"
+                    title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li>Instagram <a href="https://www.instagram.com/luizinhoanselmo/" class="icoInstagram" title="Instagram"><i
+                        class="fa fa-instagram"></i></a></li>
+        </ul>
+        <div class="row">
+            <div class="col-md-12 copy">
+                <p class="text-center">&copy; Copyright 2020 - All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
-
+<script>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </html>
