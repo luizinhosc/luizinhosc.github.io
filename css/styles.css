@@ -27,6 +27,26 @@ body {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
+
+  .carreira{
+    display: flex;
+    justify-content: space-around;
+    margin: 1px;
+  }
+
+  .carreira-dxc {
+    align-self: flex-end;
+  }
+
+  .carreira-unimed {
+    align-self: flex-end;
+
+  }
+
+  .carreira-zarp {
+    align-self: flex-end;
+  }
+
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -166,4 +186,16 @@ tbody{
   background-color:#e74c3c;
   opacity:1;filter:"alpha(opacity=100)";
   -ms-filter:"alpha(opacity=100)";
+}
+
+@media(max-width: 768px){
+  .carreira{
+    flex-direction: column;
+  } 
+  .navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+
+  }
+
 }
