@@ -1,289 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <title>Portifólio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Luiz Anselmo Costa — Desenvolvedor de Software Sênior com mais de 25 anos de experiência.">
+    <title>Luiz Anselmo | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">LA</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#carreira" class="nav-link">Carreira</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <header>
-        <div class="topo">
-            <h1><img class="logo" src="Portfolio.jpg" class="img-responsive margin" style="width:50%" alt="Logo" id="home"> </h1>
-            <nav class="navbar navbar-default">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#carreira">Carreira</a></li>
-                        <li><a href="#formacao-academica">Formação</a></li>
-                    </ul>
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="eu.jpg" alt="Luiz Anselmo Costa">
+            </div>
+            <p class="hero-greeting">Olá, eu sou</p>
+            <h1 class="hero-name">Luiz Anselmo <span>Costa</span></h1>
+            <p class="hero-title">Desenvolvedor de Software Sênior</p>
+            <p class="hero-tagline">+25 anos transformando ideias em código</p>
+            <div class="hero-links">
+                <a href="https://www.linkedin.com/in/luiz-anselmo-costa-7233a297/" class="hero-btn btn-primary" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="#sobre" class="hero-btn btn-secondary">
+                    Saiba mais <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.facebook.com/luiz.a.costajunior" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/luizinhoanselmo/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/luiz-anselmo-costa-7233a297/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+            <span class="scroll-dot"></span>
+        </a>
+    </section>
+
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre mim</span>
+                <h2 class="section-title">Quem sou eu?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="eu.jpg" alt="Luiz Anselmo Costa">
+                    </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <a href="#" id="scroll" style="display: none;"><span></span></a>
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center">
-        <img src="eu.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="280"
-            height="280">
-        <h3>Seja ágil de verdade, ou seja, adaptável :-) :-) :-) !</h3>
-    </div>
-
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center" id="sobre">
-        <h3 class="margin">Quem sou eu ?</h3>
-        <p>Os pilares da minha vida são Deus e minha familia. Sou católico e guio meus valores baseado na doutrina
-            católica, casado
-            com a Ana minha amada esposa e tenho uma filha maravilhosa chamada Rafaela de 9 anos fruto do meu
-            casamento.</p>
-        <p>Sou curioso por natureza, gosto de me desafiar a conhecer e explorar novas experiencias, principalmente
-            envolvendo tecnologias. </p>
-        <p>Não consigo conviver com explicações feitas pela metade, gosto de buscar a fundo as razões e motivos para
-            determinadas tecnologias ser como é. </p>
-        <p>Apaixonado pela cultura cervejeira, gosto de apreciar uma boa cerveja artesanal, especialmente um american
-            IPA de qualidade. </p>
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center" id="carreira">
-        <h2><b>Carreira</b></h2><br>
-        <p>Estou na area de tecnologia da informação desde 1998, passei por muitas mudanças no decorrer dos tempos
-            observando
-            e aprendendo com cada experiencia adquirida </p>
-        <p>Desde meus primeiros codigos programando Clipper :-/, nossa como to velho :-D até hoje combati muitos
-            combates e sei que vivo o momento mais maduro da carreira. </p>
-            <br>
-        <div class="carreira">
-            <div class="carreira-invillia">
-                <img src="logo-invillia-compass.svg" class="img-responsive margin" style="width:80%" alt="Image">
-                <p>Desde 2021 iniciei uma jornada incrivel em uma empresa muito desafiadora que me provocou a evoluir.
-                </p>
-                <p> Essa evolução me levou de forma muito rapida a deixar pra trás um skill muito focado em aplicações
-                      legadas focas em client/server para o uso das práticas mais modernas de desenvolvimento de 
-                      software.
-                </p>
-                <p> Hoje graças a essa enriquecedoura experiencia me sinto totalmente aderente a tudo de mais moderno
-                    que o mercado de desenvolvimento pratica.
-                </p>
-                <p> Desde de processos ageis para refinamento e elaboração das tarefas até as melhores praticas de 
-                    codificação e esteiras de entregas continuas.
-                </p>
-            </div>
-            <div class="carreira-dxc">
-                <img src="dxc.jpg" class="img-responsive margin" style="width:40%" alt="Image">
-                <p>Desde 2015 resolvi retornar a DXC.Technology, uma grande empresa de TI global com grandes clientes
-                    espalhados
-                    por todo o mundo.
-                </p>
-                <p>Atuando em projetos evolutivos atendo o cliente Claro S/A, com desafio de suportar o crescimento e
-                    evoluir
-                    o grande legado.
-                </p>
-                <p> Desenvolvo soluções utilizado: Java, Oracle PL/SQL para o backend e HTML, JavaScript e CSS com
-                    Struts no frontend.
-                </p>
-                <p> Acredito que a melhor forma de aprender é ensinando, a Dxc por meio de um programa interno de
-                    treinamentos,
-                    me proporciona oferecer treinamentos para as demais pessoas da empresa em tecnologias que uso no dia
-                    a dia e tambem em tecnologias que estudo como forma de alavancar minha carreira e não estagnar.
-                    Nesses treinamentos destaco: Node.js, Java e SAFe.
-                </p>
-            </div>
-            <div class="carreira-zarp">
-                <img src="zarp.jpg" class="img-responsive margin" style="width:35%" alt="Image">
-                <p>Entre 2013 e 2015 vivi umas das experiencias mais intensas da minha carreira atuando como gerente de
-                    projetos em uma
-                    consultoria que estava em uma fase de grandes transformações.
-                </p>
-                <p>Na Zarp System desevolvi conhecimentos valiosos na gestão e manutenção em projetos. Mesmo a frente
-                    como lider de times
-                    nunca abri mão do desenvolvimento. Trabalhando em clientes como Odontoprev e Editora Abril, pude
-                    fazer parte de projetos
-                    que ajudaram no meu crescimento profisional.
-                </p>
-                <p>Tecnologias como Delphi, SQL Server e rotinas de processamento em batch foram os desafios que
-                    precisei encarar para atender
-                    um gama de clientes com alto grau de exigencia.
-                </p>
+                <div class="about-text">
+                    <p>Os pilares da minha vida são <strong>Deus</strong> e minha <strong>família</strong>. Sou católico e guio meus valores baseados na doutrina católica, casado com a Ana, minha amada esposa, e tenho uma filha maravilhosa chamada Rafaela.</p>
+                    <p>Sou curioso por natureza — gosto de me desafiar a conhecer e explorar novas experiências, principalmente envolvendo tecnologias.</p>
+                    <p>Não consigo conviver com explicações feitas pela metade. Gosto de buscar a fundo as razões e motivos para determinadas tecnologias serem como são.</p>
+                    <p>Apaixonado pela cultura cervejeira, gosto de apreciar uma boa cerveja artesanal, especialmente um <em>American IPA</em> de qualidade.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">25+</span>
+                            <span class="highlight-label">anos de experiência</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">3+</span>
+                            <span class="highlight-label">grandes empresas</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">10+</span>
+                            <span class="highlight-label">tecnologias dominadas</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid bg-4 text-center" id="formacao-academica">
-        <h3 class="margin"><b>Formação</b></h3>
-        <div class="formacao">
-            <div class="formacao-img">
-                <img src="ufscar.png" class="img-responsive margin" style="width:100%" alt="Imagem">
+    <section class="section section-dark" id="carreira">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experiência</span>
+                <h2 class="section-title">Carreira</h2>
+                <p class="section-subtitle">Na área de TI desde 1998 — dos primeiros códigos em Clipper às práticas mais modernas de desenvolvimento de software.</p>
             </div>
-            <div class="formacao-texto">
-                <p> No final de 2017 senti a necessidade de voltar a academia para aprofundar estudos nas novas
-                    tecnologias
-                    utizadas no mercado de desenvolvimento de software.
-                </p>
-                <p> Optei pela pós graduação em Desenvolvimento de Software para Web, realizado na
-                    Universidade Federal de São Carlos.</p>
-                <p> Na pós graduação tive contato com as tecnologias mais atuais de desenvolvimento e colaboração em
-                    equipes, me reciclando e aumentando a confiança como profissional hoje estou muito conciente dos
-                    rumos
-                    que a TI tem tomado e muito mais preparado.
-                </p>
-                <p> Tecnologias que tive contato durante minha jorna na Pós graduação.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <img src="logo-invillia-compass.svg" alt="Invillia / Compass" class="company-logo">
+                            <div>
+                                <h3 class="timeline-company">Invillia / Compass</h3>
+                                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> 2021 — Atual</span>
+                            </div>
+                        </div>
+                        <p>Iniciei uma jornada incrível em uma empresa muito desafiadora que me provocou a evoluir de forma acelerada, deixando para trás um <em>skill</em> focado em aplicações legadas para o uso das práticas mais modernas de desenvolvimento de software.</p>
+                        <p>Hoje me sinto totalmente aderente a tudo de mais moderno que o mercado pratica — desde processos ágeis até as melhores práticas de codificação e esteiras de entrega contínua.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Agile</span><span class="tag">CI/CD</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <img src="dxc.jpg" alt="DXC Technology" class="company-logo">
+                            <div>
+                                <h3 class="timeline-company">DXC Technology</h3>
+                                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> 2015 — 2021</span>
+                            </div>
+                        </div>
+                        <p>Grande empresa de TI global com grandes clientes espalhados por todo o mundo. Atuei em projetos evolutivos atendendo ao cliente <strong>Claro S/A</strong>, com o desafio de suportar o crescimento e evoluir o grande legado.</p>
+                        <p>Acredito que a melhor forma de aprender é ensinando — por meio de um programa interno de treinamentos, ofereci capacitações em Node.js, Java e SAFe.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span><span class="tag">Oracle PL/SQL</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">SAFe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <img src="zarp.jpg" alt="Zarp System" class="company-logo">
+                            <div>
+                                <h3 class="timeline-company">Zarp System</h3>
+                                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> 2013 — 2015</span>
+                            </div>
+                        </div>
+                        <p>Uma das experiências mais intensas da carreira, atuando como <strong>Gerente de Projetos</strong> em uma consultoria em fase de grandes transformações. Mesmo à frente como líder de times, nunca abri mão do desenvolvimento.</p>
+                        <p>Trabalhando em clientes como <strong>Odontoprev</strong> e <strong>Editora Abril</strong>, participei de projetos que contribuíram significativamente para meu crescimento profissional.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Delphi</span><span class="tag">SQL Server</span><span class="tag">Gestão de Projetos</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <h4> <b>
-                << Tecnologias que tive contato durante minha jorna na Pós graduação.>>
-            </b> </h4>
-        <div class="formacao-table">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Disciplina</th>
-                        <th>Conteudo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desenvolvimento de Software em Java </td>
-                        <td>
-                            <p>Qualidade de código: Demeter, GRASP e SOLID. </p>
-                            <p>Padrões de Projeto em Java – Aplicação dos principais padrões de projeto criacionais,
-                                estruturais e comportamentais em Java para a obtenção de código flexível e reutilizável.
-                            </p>
-                            <p>Frameworks de persitência de dados com JPA e hibernate.
-                            </p>
-                            <p>Arquitetura de aplicações WEB como, protocolo HTTP, requisição e resposta, JSP, JSTL,
-                                HTML, CSS e Java script.
-                            </p>
-                            <p>Web services e arquitetura RESTful em Java - Utilização do Spring Boot para exposição de
-                                regras de negócio como serviços web RESTful. Implementação de mecanismos de segurança
-                                para serviços web RESTful. Visão geral sobre testes e documentação de serviços serviços
-                                web.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Teste Funcional e Estrutural em Aplicações Web e Aplicações Móveis</td>
-                        <td>
-                            <p>Conceitos e terminologia sobre Teste Funcional e Teste Estrutural.</p>
-                            <p>Automatização de critérios de teste funcionais.</p>
-                            <p>Automatização de critérios de teste estruturais baseados em fluxo de controle.</p>
-                            <p>Integração de arcabouços de teste unitário com ferramentas de apoio ao teste funcional.
-                            </p>
-                            <p>Integração de ferramentas de captura e reprodução com ferramentas de apoio ao teste
-                                funcional e estrutural</p>
-                        </td>
+    </section>
 
-                    </tr>
-                    <tr>
-                        <td>User eXperience [para todos] na Web</td>
-                        <td>
-                            <p>Princípios, conceitos e vertentes de User eXperience (UX) para todos na web.</p>
-                            <p>Técnicas de design e avaliação de usabilidade na web: Personas, guidelines, rapid
-                                prototyping – baixa fidelidade, Avaliação Heurística e Testes com Usuário.</p>
-                            <p>Técnicas de design e avaliação de acessibilidade na web: guidelines, rapid prototyping –
-                                média fidelidade, Avaliação Simplificada de Acessibilidade, Avaliações semi automáticas
-                            </p>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            Desenvolvimento de Software do front ao back-end com JavaScript
-                        </td>
-                        <td>
-                            <p>HTML5/CSS: O HTML e CSS é a base para qualquer página web. Neste tópico entraremos no
-                                mundo das tags, APIs e conceitualização do CSS. Conteúdo preparatório para os outros
-                                temas deste tópico.</p>
-                            <p>JavaScript: explorar a criação script com JavaScript, novidades do ECMASCript, conceito
-                                de variáveis, escopo, operadores, estrutura de controle, funções, clousure, patterns
-                                para JavaScript, promise, conceitos de programação funcional e melhores práticas.</p>
-                            <p>React: estrutura de um projeto react, componentes, estados, roteamento, redux e criação
-                                de testes.</p>
-                            <p>Angular: diferenças entre as versões do angular, estrutura de um projeto Angular,
-                                typescript, angular CLI, componentes, rotas, data binding, serviços, formulários e
-                                integração com Back-End.</p>
-                            <p>Introdução ao Node.js: Apresentação do JavaScript como alternativa de linguagem para
-                                desenvolvimento de APIs de dados. Análise da arquitetura baseada em eventos do Node.js,
-                                com foco nos benefícios de performance e concorrência trazidos por ela.</p>
-                            <p>Desenvolvendo APIs de dados com Express: Aprofundamento no framework Express para o
-                                desenvolvimento de APIs de dados, buscando cobrir casos excepcionais como recebimento de
-                                arquivos (upload) e envio de imagens pré-processadas, além do CRUD básico.</p>
-                            <p>Trabalhando com dados usando Knex: Adicionar persistência de dados na nossa aplicação
-                                através do framework de construção de SQL Knex. Gerenciar a evolução da base de dados
-                                através da ferramenta db-migrate.</p>
-                            <p>Servidores Stateless vs. Stateful: Análise conceitual de servidores stateless e
-                                servidores stateful, incluindo o conceito de sticky session. Desenvolvimento de
-                                mecanismo de autenticação totalmente stateless.</p>
-                            <p>Usando cache para aumentar a performance da API: Apresentação do uso de cache em diversas
-                                camadas da aplicação e análise dos ganhos de performance obtidos.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Academia Agil
-                        </td>
-                        <td>
-                            <p>Objetivos da Academia ágil, gerenciamento de projetos versus gerenciamento de produtos,
-                                iniciativas ágeis versus iniciativas tradicionais, manifesto ágil (e Modern Agile) e o
-                                framework cynefin</p>
-                            <p> O Framework Scrum: visão geral, o scrum team, eventos, artefatos e transparência (essa
-                                parte do curso é preparatória para a certificação PSM I da scrum.org).</p>
-                            <p>Gestão de Produtos: criando um produto na prática.</p>
-                            <p>O Framework SAFe 4.5: Full SAFe, Large Solution SAFe, Portfolio SAFe, Essential SAFe e a
-                                ferramenta CA Agile Central.</p>
-                            <p>Se tornando um facilitador, a carreira de agilista e prova teórica.</p>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-5 text-right">
-        <ul class="social-network social-circle">
-            <li>Facebok <a href="https://www.facebook.com/luiz.a.costajunior" class="icoFacebook" title="Facebook"><i
-                        class="fa fa-facebook"></i></a></li>
-            <li>Linkedin <a href="https://www.linkedin.com/in/luiz-anselmo-costa-7233a297/" class="icoLinkedin"
-                    title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            <li>Instagram <a href="https://www.instagram.com/luizinhoanselmo/" class="icoInstagram" title="Instagram"><i
-                        class="fa fa-instagram"></i></a></li>
-        </ul>
-        <div class="row">
-            <div class="col-md-12 copy">
-                <p class="text-center">&copy; Copyright 2020 - All rights reserved.</p>
+    <section class="section" id="formacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Educação</span>
+                <h2 class="section-title">Formação Acadêmica</h2>
             </div>
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="ufscar.png" alt="UFSCar — Universidade Federal de São Carlos">
+                </div>
+                <div class="education-content">
+                    <h3>Pós-Graduação em Desenvolvimento de Software para Web</h3>
+                    <p class="education-institution">Universidade Federal de São Carlos — UFSCar</p>
+                    <p class="education-period"><i class="fas fa-calendar-alt"></i> 2017 — 2019</p>
+                    <p>No final de 2017 senti a necessidade de voltar à academia para aprofundar estudos nas novas tecnologias utilizadas no mercado. A pós-graduação me proporcionou contato com as tecnologias mais atuais de desenvolvimento e colaboração em equipe, aumentando minha confiança como profissional.</p>
+                    <div class="education-subjects">
+                        <span class="subject-tag">Java &amp; Spring Boot</span>
+                        <span class="subject-tag">JPA &amp; Hibernate</span>
+                        <span class="subject-tag">React</span>
+                        <span class="subject-tag">Angular</span>
+                        <span class="subject-tag">Node.js &amp; Express</span>
+                        <span class="subject-tag">RESTful APIs</span>
+                        <span class="subject-tag">Testes de Software</span>
+                        <span class="subject-tag">UX &amp; Acessibilidade</span>
+                        <span class="subject-tag">Scrum &amp; SAFe</span>
+                        <span class="subject-tag">SOLID &amp; Design Patterns</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="habilidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Habilidades</span>
+                <h2 class="section-title">Tecnologias &amp; Ferramentas</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Back-end</h3>
+                    <div class="skill-tags">
+                        <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express</span><span>RESTful APIs</span><span>JPA / Hibernate</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Front-end</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Angular</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+                    <div class="skill-tags">
+                        <span>Oracle PL/SQL</span><span>SQL Server</span><span>PostgreSQL</span><span>Knex</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-infinity"></i> DevOps &amp; Métodos</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>CI/CD</span><span>Scrum</span><span>SAFe</span><span>Testes Unitários</span><span>SOLID</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">LA</span>
+                    <p>Luiz Anselmo Costa</p>
+                    <p class="footer-subtitle">Desenvolvedor de Software Sênior</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/luiz.a.costajunior" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/luiz-anselmo-costa-7233a297/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/luizinhoanselmo/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2024 Luiz Anselmo Costa. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const navbar = document.getElementById("navbar");
+        const backToTop = document.getElementById("backToTop");
+        const navToggle = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        window.addEventListener("scroll", () => {
+            const scrolled = window.scrollY > 50;
+            navbar.classList.toggle("scrolled", scrolled);
+            backToTop.classList.toggle("visible", scrolled);
+            let current = "";
+            document.querySelectorAll("section[id]").forEach(section => {
+                if (window.scrollY >= section.offsetTop - 120) current = section.id;
+            });
+            document.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+            });
+        });
+
+        backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            navToggle.classList.toggle("open");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+                navToggle.classList.remove("open");
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("animate-in"); });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(".timeline-item, .education-card, .skill-category, .about-grid").forEach(el => observer.observe(el));
+    </script>
 </body>
-<script>
-    $(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-</script>
 </html>
